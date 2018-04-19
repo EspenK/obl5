@@ -63,7 +63,6 @@ input:valid {
 input:invalid {
     color: crimson;
     border-left: 5px crimson solid;
-    box-shadow: none;
 }
 
 input[required]{
@@ -71,4 +70,5 @@ input[required]{
     background-size: 1em 1em;
     background-position: right top;
     background-repeat: no-repeat;
+    box-shadow: none;
 }
