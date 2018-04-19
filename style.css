@@ -63,6 +63,7 @@ input:valid {
 input:invalid {
     color: crimson;
     border-left: 5px crimson solid;
+    box-shadow: none;
 }
 
 input[required]{
