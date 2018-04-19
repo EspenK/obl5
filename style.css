@@ -1,0 +1,73 @@
+body {
+    font-family: lucida helvetica, sans-serif;
+}
+
+form div {
+    margin-top: 0.75em;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    text-align: left;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 5%;
+}
+
+input {
+    line-height: 1.5em;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: lavender;
+    border-style: none;
+    border-left: 5px lightseagreen solid;
+    padding-left: 0.5em;
+}
+
+textarea {
+    vertical-align: top;
+    height: 4em;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: lightseagreen;
+}
+
+button:hover {
+    opacity: 0.7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#referee {
+    display: none;
+}
+
+input:valid {
+}
+
+input:invalid {
+    color: crimson;
+    border-left: 5px crimson solid;
+}
+
+input[required]{
+    background-image: radial-gradient(crimson 45%, transparent 50%);
+    background-size: 1em 1em;
+    background-position: right top;
+    background-repeat: no-repeat;
+}

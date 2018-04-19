@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="form.js"></script>
+</head>
+<body onload="setMaxDate()">
+<header>
+    <h1>kverna.me</h1>
+</header>
+<div class="content">
+    <form>
+        <h3>Apply for SkyStoring services</h3>
+        <div>
+            <input id="name" type="text" title="name" placeholder="Name" required>
+        </div>
+        <div>
+            <input id="email" type="email" title="email" placeholder="Email" required>
+        </div>
+        <div>
+            <input id="phone" type="number" title="phone number" placeholder="Phone number">
+        </div>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input id="dob" type="date" title="date of birth">
+        </div>
+        <div>
+            <input type="checkbox" id="referred" title="referred">
+            <label for="referred">Do you have a referral?</label>
+        </div>
+        <div>
+            <input id="referee" type="text" placeholder="Referees name">
+        </div>
+        <div>
+            <textarea id="message" title="message" placeholder="Further details, if applicable..."></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<footer>
+    <p>Made by espen | kverna.me</p>
+</footer>
+</body>
+</html>
