@@ -2,16 +2,13 @@ $(document).ready(function () {
 
     // Validate phone number
     $("#phone").keyup(function () {
-        var field = $("#phone");
         var inputValue = $("#phone").val();
-
+        var field = document.getElementById("phone");
         if((isNaN(inputValue) || (inputValue.length != 8 && inputValue.length > 0))) {
-            // field.removeClass("valid").addClass("invalid");
-            document.getElementById("phone").setCustomValidity("Type a valid phone number.");
+            field.setCustomValidity("Type a valid phone number.");
         }
         else {
-            // field.removeClass("invalid").addClass("valid");
-            document.getElementById("phone").setCustomValidity("");
+            field.setCustomValidity("");
         }
     });
 
