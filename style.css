@@ -1,15 +1,17 @@
 body {
     font-family: lucida helvetica, sans-serif;
-    width: 300px;
 }
 
 form div {
     margin-top: 0.75em;
 }
 
+@media screen {
+
+}
+
 form {
-    width: 90%;
-    max-width: 300px;
+    width: 96%;
     margin: auto;
     padding: 10px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
