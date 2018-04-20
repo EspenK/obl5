@@ -42,6 +42,16 @@ $(document).ready(function () {
         console.log(phone.val());
     });
 
+    $("#referee").change(function () {
+        var referee = $("#referee");
+        if (!referee.val().includes(" ")) {
+            this.setCustomValidity("Enter full name");
+        }
+        else {
+            this.setCustomValidity("");
+        }
+    });
+
     // If the checkbox (referred) is checked, show input (referee).
     $("#referred").click(function () {
         $("#referee").toggle(this.checked);
@@ -79,11 +89,11 @@ $(document).ready(function () {
         element.setAttribute("max", maxDate);
     }
 
+    $("#my-form").submit(function () {
+        alert("Your request was received (not really...)");
+        return false;
+    });
+
     // Run when the document loads
     setMaxDate();
 });
-
-// Handle the data when the form is submitted (not)
-function submitAlert() {
-    alert("Your request was received (not really though)");
-}
