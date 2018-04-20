@@ -32,10 +32,11 @@ input {
 input, textarea {
     width: 100%;
     box-sizing: border-box;
-    background-color: lavender;
+    background-color: #eee;
     border-style: none;
     border-left: 5px lightseagreen solid;
     padding-left: 0.5em;
+    line-height: 2em;
 }
 
 textarea {
