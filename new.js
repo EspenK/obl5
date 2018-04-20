@@ -20,7 +20,6 @@ $(document).ready(function () {
         }
     });
 
-
     $("#email").change(function () {
         var email = $("#email");
         var re = /([A-Za-z0-9._+-]+@[A-Za-z0-9._+-]+\.[A-Za-z]+)/;
@@ -34,7 +33,7 @@ $(document).ready(function () {
 
     $("#phone").change(function () {
         var phone = $("#phone");
-        if ((isNaN(phone) || (phone.length != 8 && phone.length > 0))) {
+        if ((isNaN(phone.val()) || (phone.val().length != 8 && phone.val().length > 0))) {
             this.setCustomValidity("Enter valid phone number");
         }
         else {
@@ -83,3 +82,8 @@ $(document).ready(function () {
     // Run when the document loads
     setMaxDate();
 });
+
+// Handle the data when the form is submitted (not)
+function submitAlert() {
+    alert("Your request was received (not really though)");
+}
